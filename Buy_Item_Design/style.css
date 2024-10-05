@@ -1,0 +1,278 @@
+body{
+    /* background-color: rgb(210, 204, 197); */
+    min-height: 100vh;
+    margin: 0;
+    /* width: 100%;
+    max-width: 899px; */
+}
+
+.navbar {
+    /* position: sticky; */
+    /* top: 0; */
+    background-color: rgb(242, 237, 237);
+    border-bottom: 1px solid rgb(204, 198, 183);
+    /* margin: 15px; */
+    z-index: 1000;
+
+ 
+    
+
+}
+
+.nav_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+
+}
+
+.nav_left{
+    display: flex;
+}
+
+.nav_right{
+    margin-left: auto;
+}
+
+.nav_right_items {
+    display: flex;
+}
+
+.nav_left_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav_left_items ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    margin: 0 15px;
+}
+
+.nav_left_items li{
+    margin-left: 20px;
+}
+li:nth-of-type(1){
+    margin-left: 120px;
+}
+
+
+#bars {
+    position: relative;
+    left: 18px;
+    top: -3px;
+}
+
+.heading{
+    position: relative;
+    left: 35px;
+    top: -5px;
+    font-family: "Kumbh Sans", sans-serif;
+
+}
+
+#cart{
+    position: relative;
+    /* left: -24px; */
+    /* top: 4px;
+    right: 500px; */
+}
+
+
+.logo {
+    padding-left: 0px;
+    position: relative;
+    /* left: -36px; */
+    /* top: -1px;
+    right: 500px; */
+}
+
+/* Hero Section Design */
+
+.hero_image_container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    padding: 20px; /* Makes sure the container takes the full viewport height */
+}
+
+.snicker_1{
+    max-width: 50vw;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    /* margin: auto;
+    height: 450px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* object-fit: cover; */
+}
+
+.hero_headline_1{
+    font-family: "Kumbh Sans", sans-serif;
+    color: gray;
+    margin-left: 20px;
+}
+
+.hero_headline_2{
+    font-family: "Kumbh Sans", sans-serif;
+    color: black;
+    margin-left: 20px;
+}
+
+.hero_para{
+    font-family: "Kumbh Sans", sans-serif;
+    color: gray;
+    margin-left: 20px;
+}
+
+.price{
+    display:flex;
+    background-color: white;
+    max-width: 850px;
+    margin: auto;
+}
+
+.discounted_amount{
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 20px;
+    /* line-gap-override: 50px; */
+}
+
+.discount{
+    background-color: black;
+    color: #fff;
+    height: 17px;
+    width: 33px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 20px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.actual_price{
+    font-family: "Kumbh Sans", sans-serif;
+    margin-left: auto;
+    margin-right: 50px;
+    position: relative;
+    top: 15px;
+    color: gray;
+    text-decoration:line-through;
+
+}
+
+.range{
+    display: flex;
+    background-color: rgb(231, 236, 241);
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.minus{
+    color: orange;
+    font-size: 50px;
+    position: relative;
+    bottom: 63px;
+    margin-left: 20px;
+}
+
+.zero{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.plus{
+    color: orange;
+    font-size: 30px;
+    font-weight: 900;
+    position: relative;
+    bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn{
+    margin: 20px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    height: 100%;
+    background-color: orange;
+    border-color: orange;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 850px;
+
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cart_logo{
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+@media screen and (min-width: 900px){
+    .hero_section{
+        display: flex;
+    }
+    
+
+    .snicker_1{
+        margin: 0 auto;
+        height: auto;
+        max-width: 50vw;
+        object-fit: cover;
+        /* padding: 40px; */
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 899px){
+    ul li{
+        display: none;
+    }
+    .snicker_1{
+        max-width: 100%;
+        height: auto;
+    }
+}
